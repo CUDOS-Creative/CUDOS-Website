@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+
+  > li {
+    > a {
+      color: white;
+    }
+
+    + li {
+      margin-left: 2rem;
+    }
+  }
+
+  .menu__dropdown {
+    display: none;
+  }
+}
