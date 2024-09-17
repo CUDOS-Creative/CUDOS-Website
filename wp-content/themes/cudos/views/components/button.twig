@@ -1,0 +1,7 @@
+<a class="button {{ class }}" href="{{ button.url }}" target="{{ button.target ? button.target : '_self' }}"
+{% if label %}
+title="{{ label }}"
+{% endif %}
+>
+  <span>{{ button.title }}</span>
+</a>

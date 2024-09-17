@@ -1,0 +1,29 @@
+p,
+ol,
+ul,
+table {
+  font-size: rem(18);
+  line-height: 1.5;
+  color: $grey;
+  margin-bottom: 1rem;
+}
+
+.bg-dark,
+.bg-image,
+.bg-custom {
+  p,
+  ol,
+  ul,
+  table {
+    color: white;
+  }
+}
+
+.bg-light {
+  p,
+  ol,
+  ul,
+  table {
+    color: $grey;
+  }
+}

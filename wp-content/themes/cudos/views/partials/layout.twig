@@ -1,0 +1,7 @@
+{% for block in layout %}
+  <div class="layout__block bg-{{ block.settings.background }}"
+    {% include 'partials/block-conditionals.twig' %}
+  >
+    {% include "blocks/" ~ block.acf_fc_layout ~ ".twig" %}
+  </div>
+{% endfor %}

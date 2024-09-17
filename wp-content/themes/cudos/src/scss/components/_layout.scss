@@ -1,0 +1,13 @@
+.layout {
+  .layout__block {
+    &.bg-image {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &.bg-dark,
+    &.bg-image {
+      color: white;
+    }
+  }
+}

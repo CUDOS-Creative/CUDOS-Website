@@ -1,0 +1,26 @@
+.bg-dark,
+.bg-image,
+.bg-custom,
+.bg-gradient {
+  color: white;
+}
+
+.bg-dark {
+  background-color: $dark;
+}
+
+.bg-light {
+  background-color: white;
+  color: $dark;
+}
+
+.bg-gradient {
+  background: rgb(192, 80, 94);
+  background: linear-gradient(
+    308deg,
+    rgba(192, 80, 94, 1) 0%,
+    rgba(244, 151, 11, 1) 44%,
+    rgba(244, 151, 11, 1) 55%,
+    rgba(192, 80, 94, 1) 100%
+  );
+}

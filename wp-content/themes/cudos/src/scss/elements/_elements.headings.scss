@@ -12,6 +12,21 @@ h6,
 .h6 {
   font-family: "Reem Kufi", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-size: rem(28);
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: rem(22);
+  margin-bottom: 1rem;
 }

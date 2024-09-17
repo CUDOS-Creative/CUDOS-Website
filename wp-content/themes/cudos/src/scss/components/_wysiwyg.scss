@@ -1,0 +1,16 @@
+.wysiwyg {
+  > * {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--narrow-p {
+    p {
+      max-width: 690px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

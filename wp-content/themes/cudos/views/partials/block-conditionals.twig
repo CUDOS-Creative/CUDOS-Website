@@ -1,0 +1,7 @@
+{% if block.settings.background == 'image' %}
+  style="background-image: url({{ get_image(block.settings.background_image).src }});"
+{% endif %}
+
+{% if block.settings.background == 'custom' %}
+  style="background-color: {{ block.settings.bg_colour }};"
+{% endif %}

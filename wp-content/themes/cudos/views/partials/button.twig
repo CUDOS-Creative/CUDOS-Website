@@ -1,0 +1,7 @@
+{% if block.button %}
+  <div class="mt-8">
+    {% include 'components/button.twig' with {
+      'button' : block.button,
+    } %}
+  </div>
+{% endif %}
