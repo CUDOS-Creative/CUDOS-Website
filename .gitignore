@@ -54,12 +54,9 @@ Thumbs.db
 !wp-content/
 !.github/
 
-# Ignore everything in the "wp-content" directory, except the "plugins"
-# and "themes" directories.
+# Ignore everything in the "wp-content" directory, except the "bin" directory.
 wp-content/*
-!wp-content/plugins/
-!wp-content/themes/
-!wp-content/mu-plugins/
+!wp-content/bin/
 
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out examples for hints on how to do this.)
