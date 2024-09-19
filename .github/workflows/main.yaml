@@ -8,12 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      # Run composer install
-      - name: Install dependencies via Composer
-        run: composer install --no-dev
-        working-directory: wp-content/themes/cudos/
-
       - name: GitHub Action Deploy to WP Engine
         uses: wpengine/github-action-wpe-site-deploy@v3
         with:
