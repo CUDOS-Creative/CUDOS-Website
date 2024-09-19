@@ -1,1 +1,37 @@
-<footer id="footer">Copyright {{ 'now'|date('Y') }}</footer>
+<footer id="footer">
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-12 lg:col-span-6">
+          <a class="footer__logo" href="{{ site.url }}" aria-label="Cudos Creative.">
+            <img src="{{ theme.link ~ '/static/orange_logo.png' }}" alt="Cudos Creative.">
+          </a>
+
+          <p class="footer__details mt-6">
+            <strong>A</strong> Unit 8B Wrens Court, 54 Victoria Road, Sutton Coldfield, Birmingham, B72 1SY<br>
+            <strong>T</strong> 0121 227 4175<br>
+            <strong>E</strong> <a href="mailto:studio@cudoscreative.co.uk">studio@cudoscreative.co.uk</a>
+          </p>
+        </div>
+
+        <div class="col-span-12 lg:col-span-4">
+          <a class="charity" href="https://cudoscreative.co.uk/sustainability/" target="_blank" rel="noopener">
+            <img src="{{ theme.link ~ '/static/charity.png' }}" alt="Our Charity of the Year.">
+          </a>
+        </div>
+
+        <div class="col-span-12 lg:col-span-2 flex lg:justify-end">
+          <ul class="social">
+            <li><a href="#">{{ source('/static/svg/facebook.svg' ) }}</a></li>
+            <li><a href="#">{{ source('/static/svg/linkedin.svg' ) }}</a></li>
+            <li><a href="#">{{ source('/static/svg/instagram.svg' ) }}</a></li>
+          </ul>
+        </div>
+      </div><!-- /.grid -->
+
+      <div class="footer__copy mt-4">
+        <p>&copy; {{ 'now'|date('Y') }} | All Rights Reserved</p>
+      </div>  
+    </div><!-- /.m-w -->
+  </div><!-- /.container -->
+</footer>

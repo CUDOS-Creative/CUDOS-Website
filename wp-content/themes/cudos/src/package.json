@@ -21,8 +21,11 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "gulp-sass-glob": "^1.1.0",
     "postcss": "^8.0.0",
-    "postcss-discard-comments": "^7.0.3"
+    "postcss-discard-comments": "^7.0.3",
+    "simple-parallax-js": "^6.0.1"
   }
 }

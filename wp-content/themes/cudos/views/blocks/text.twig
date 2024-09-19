@@ -1,6 +1,12 @@
-<div class="container px-4 mx-auto">
-  <div class="text-center py-24 grid grid-cols-12 gap-4">
+<div class="container px-4 mx-auto" data-aos="fade-up">
+  <div class="text-center grid grid-cols-12 gap-4">
     <div class="col-span-12 lg:col-span-8 lg:col-start-3">
+
+      {% if block.icon %}
+        <div class="icon icon--lg mb-8">
+          <img src="{{ get_image(block.icon).src }}" alt="{{ get_image(block.icon).alt }}">
+        </div>
+      {% endif %}
       <div class="wysiwyg wysiwyg--narrow-p">
         {{ block.text }}
 

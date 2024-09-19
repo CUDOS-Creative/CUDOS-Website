@@ -1,0 +1,18 @@
+#footer {
+  background-color: $dark;
+  padding: 4rem 0;
+  p {
+    color: $white;
+  }
+
+  .footer__copy {
+    p {
+      margin: 0;
+    }
+  }
+
+  .charity {
+    display: inline-block;
+    max-width: 320px;
+  }
+}

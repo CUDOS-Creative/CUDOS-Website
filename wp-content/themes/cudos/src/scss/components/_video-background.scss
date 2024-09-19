@@ -1,8 +1,17 @@
+.home-video {
+  overflow: hidden;
+}
+
 .video-background {
   position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+
+  @media (max-width: 900px) {
+    /* height = 100 * (9 / 16) = 56.25 */
+    height: 90vw;
+  }
 
   iframe {
     position: absolute;
@@ -20,6 +29,11 @@
     @media (max-aspect-ratio: 16/9) {
       /* width = 100 / (9 / 16) = 177.777777 */
       width: 177.78vh;
+    }
+
+    @media (max-width: 900px) {
+      /* height = 100 * (9 / 16) = 56.25 */
+      width: 160vw;
     }
   }
 }

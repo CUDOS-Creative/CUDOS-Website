@@ -20,17 +20,8 @@ class StarterSite extends Site
     add_action('wp_enqueue_scripts', array($this, 'enqueue_assets')); // Enqueue assets here
 
 		add_filter('timber/context', array($this, 'add_to_context'));
-		add_filter('timber/twig', array($this, 'add_to_twig'));
-		add_filter('timber/twig/environment/options', [$this, 'update_twig_environment_options']);
-
+    
 		parent::__construct();
-	}
-
-	/**
-	 * This is where you can register custom post types.
-	 */
-	public function register_post_types()
-	{
 	}
 
 	/**
@@ -73,9 +64,18 @@ class StarterSite extends Site
 		$context['foo']   = 'bar';
 		$context['stuff'] = 'I am a value set in your functions.php file';
 		$context['notes'] = 'These values are available everytime you call Timber::context();';
+    $context['hero'] = get_field('hero');
 		$context['menu']  = Timber::get_menu('primary');
 		$context['site']  = $this;
     $context['layout'] = get_field('layout');
+
+    $args = array(
+      'post_type'       => 'creation',
+      'posts_per_page'  => -1,
+      'post_status'     => 'publish',
+    );
+
+    $context['creations'] = Timber::get_posts($args);
 
 		return $context;
 	}
@@ -133,35 +133,6 @@ class StarterSite extends Site
 		);
 
 		add_theme_support('menus');
-	}
-
-	/**
-	 * This would return 'foo bar!'.
-	 *
-	 * @param string $text being 'foo', then returned 'foo bar!'.
-	 */
-	public function myfoo($text)
-	{
-		$text .= ' bar!';
-		return $text;
-	}
-
-	/**
-	 * This is where you can add your own functions to twig.
-	 *
-	 * @param Twig\Environment $twig get extension.
-	 */
-	public function add_to_twig($twig)
-	{
-		/**
-		 * Required when you want to use Twig’s template_from_string.
-		 * @link https://twig.symfony.com/doc/3.x/functions/template_from_string.html
-		 */
-		// $twig->addExtension( new Twig\Extension\StringLoaderExtension() );
-
-		$twig->addFilter(new \Twig\TwigFilter('myfoo', [$this, 'myfoo']));
-
-		return $twig;
 	}
 
 	/**

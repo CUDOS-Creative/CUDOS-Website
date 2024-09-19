@@ -1,0 +1,8 @@
+<div class="hero {{ post.post_type == 'creation' ? 'hero--creation' : '' }}" style="background-image: url('{{ get_image(hero.image).src }}');">
+  <div class="container mx-auto px-4 flex flex-col justify-end">
+    {% if post.post_type == 'creation' %}
+    <span class="hero__subtitle h4">Case Study</span>
+    {% endif %}
+    <h1>{{ hero.page_title ? hero.page_title : post.title }}</h1>
+  </div>
+</div>

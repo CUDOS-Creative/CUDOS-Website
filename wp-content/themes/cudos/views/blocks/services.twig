@@ -1,0 +1,20 @@
+<div class="container px-4 mx-auto">
+  <div class="max-w-6xl mx-auto {{ block.boxed_style ? 'p-8 boxed-style' : '' }}">
+    <div class="text-center">
+      <h2>{{ block.title }}</h2>
+    </div>
+    <div class="grid grid-cols-6 gap-14">
+      {% for item in block.services %}
+        <div class="col-span-6 md:col-span-3 flex flex-col items-center text-center lg:px-8" data-aos="fade-up" data-aos-delay="{{ loop.index is even ? '100' : '0' }}">
+          {% if item.icon %}
+            <div class="icon icon--lg mb-8">
+              <img src="{{ get_image(item.icon).src }}" alt="{{ get_image(item.icon).alt }}">
+            </div>
+          {% endif %}
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text_description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

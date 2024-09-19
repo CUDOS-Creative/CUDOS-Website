@@ -1,0 +1,22 @@
+<div class="container px-4 mx-auto text-center">
+  <div class="text-center">
+    <h2>{{ block.title }}</h2>
+  </div>
+</div>
+
+<div class="container px-4 mx-auto max-w-5xl">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+    {% for item in get_posts(block.case_studies) %}
+      <a class="card" href="{{ item.link }}">
+        <img src="{{ get_image(item.thumbnail).src|resize(500, 500, 'center') }}" alt="{{ get_image(item.thumbnail).alt }}">
+        <div class="card__overlay">
+          {{ item.title }}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="text-center" data-aos="fade-up" data-aos-delay="{{ block.icons|length }}00">
+    {% include 'partials/button.twig' %}
+  </div>
+</div>

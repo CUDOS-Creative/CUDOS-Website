@@ -1,5 +1,9 @@
 .icon {
-  width: 80px;
+  max-width: 100px;
   margin-left: auto;
   margin-right: auto;
+
+  &--lg {
+    max-width: 180px;
+  }
 }

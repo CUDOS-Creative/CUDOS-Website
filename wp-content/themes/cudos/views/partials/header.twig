@@ -1,0 +1,28 @@
+<div class="container mx-auto px-4 pb-4 flex items-start justify-between">
+  <div>
+    <a class="logo pt-4 md:pt-5" href="{{ site.url }}" aria-label="Cudos Creative.">
+      <img src="{{ theme.link ~ '/static/logo.png' }}" alt="Cudos Creative.">
+    </a>
+  </div>
+
+  <div class="flex items-start">
+    <div class="award mr-14">
+      <img src="{{ theme.link ~ '/static/award_win.png' }}" alt="Midlands Service Excellence Awards. Company of the Year 2024.">
+    </div>
+
+    <div class="pt-2 md:pt-4">
+      <button class="hamburger hamburger--slider js-nav-toggle" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+
+    
+    <nav id="nav-main" class="nav-main" aria-hidden="true">
+      {% include 'partials/menu.twig' with {
+          items: menu.get_items
+      } %}
+    </nav>
+  </div>
+</div>

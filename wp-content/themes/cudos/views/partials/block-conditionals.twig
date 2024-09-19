@@ -1,4 +1,4 @@
-{% if block.settings.background == 'image' %}
+{% if block.settings.background == 'image' and block.settings.parallax != true %}
   style="background-image: url({{ get_image(block.settings.background_image).src }});"
 {% endif %}
 
