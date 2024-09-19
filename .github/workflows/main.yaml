@@ -18,3 +18,4 @@ jobs:
           SRC_PATH: "wp-content/themes/cudos/"
           REMOTE_PATH: "wp-content/themes/cudos/"
           CACHE_CLEAR: TRUE
+          SCRIPT: "wp-content/bin/post-deploy.sh"
