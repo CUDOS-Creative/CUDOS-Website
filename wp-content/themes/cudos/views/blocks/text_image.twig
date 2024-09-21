@@ -6,7 +6,7 @@
 
     <!-- Right Side: Centered Content -->
     <div data-aos="fade-{{ block.image_alignment != 'image_right' ? 'left' : 'right' }}" class="lg:w-1/2 w-full flex items-center justify-center pb-14 p-4 md:p-8 md:pb-12 {{ block.image_alignment == 'image_right' ? 'lg:order-1' : '' }}">
-        <div class="text-center sm:px-10 xl:px-24">
+        <div class="wysiwyg text-{{ block.text_alignment ? block.text_alignment : 'center' }} sm:px-10 xl:px-24">
           {% if block.icon %}
             <div class="icon mb-6">
               <img src="{{ get_image(block.icon).src }}" alt="{{ get_image(block.icon).alt }}">

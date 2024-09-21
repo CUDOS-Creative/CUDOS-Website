@@ -1,0 +1,34 @@
+.link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 2px;
+    background: $orange;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &:after {
+    background: $white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: $white;
+
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}

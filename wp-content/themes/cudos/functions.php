@@ -7,8 +7,6 @@
  * @link https://github.com/timber/starter-theme
  */
 
-namespace App;
-
 use Timber\Timber;
 
 // Load Composer dependencies.

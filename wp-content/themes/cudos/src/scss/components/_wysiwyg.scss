@@ -5,12 +5,20 @@
     }
   }
 
-  &--narrow-p {
-    p {
-      max-width: 690px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  img {
+    padding: 1rem 0 2rem 0;
+  }
+
+  ol,
+  ul {
+    padding-left: 1rem;
+  }
+
+  &--narrow,
+  &--narrow-p p {
+    max-width: 690px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

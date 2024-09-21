@@ -1,0 +1,56 @@
+{% set team = get_team() %}
+
+<div class="container mx-auto px-4">
+  <div class="text-center pb-6">
+    <h2>{{ block.title }}</h2>
+  </div>
+
+  <div class="max-w-6xl mx-auto">
+    <div class="md:grid grid-cols-12 gap-8">
+      {% for item in team %}
+      <div class="md:col-span-6 lg:col-span-4">
+        <div class="team pb-6">
+          <button class="card" data-micromodal-trigger="team-modal-{{ loop.index }}"> 
+            <img src="{{ get_image(item.thumbnail).src|resize(500,500, 'center') }}" alt="{{ get_image(item.thumbnail).alt }}">
+            <div class="card__overlay card__overlay--small">
+              Read {{ item.title|split(' ')[0] }}'s Bio
+            </div>
+          </button>
+
+          <div class="team__text text-center">  
+            <h3 class="mt-4 mb-0">{{ item.title }}</h3>
+            <h4 class="white">{{ item.position }}</h4>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% for item in team %}
+<div class="modal micromodal-slide" id="team-modal-{{ loop.index }}" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="team-modal-{{ loop.index }}-title">
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+
+        <div class="modal__image">
+          <img src="{{ get_image(item.thumbnail).src|resize(300,300, 'center') }}" alt="{{ get_image(item.thumbnail).alt }}">
+        </div>
+        <div class="modal__content bg-dark" id="team-modal-{{ loop.index }}-content">
+          <div class="wysiwyg">
+            {{ item.content }}
+
+            <div class="mt-4">
+              <p>
+                <a class="link" href="{{ item.linkedin }}" target="_blank">
+                  Follow {{ item.title|split(' ')[0] }} on LinkedIn.
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}

@@ -1,8 +1,10 @@
 <div class="container px-4 mx-auto">
   <div class="max-w-6xl mx-auto {{ block.boxed_style ? 'p-8 boxed-style' : '' }}">
-    <div class="text-center">
+    {% if block.title %}
+    <div class="services-title text-center pb-6">
       <h2>{{ block.title }}</h2>
     </div>
+    {% endif %}
     <div class="grid grid-cols-6 gap-14">
       {% for item in block.services %}
         <div class="col-span-6 md:col-span-3 flex flex-col items-center text-center lg:px-8" data-aos="fade-up" data-aos-delay="{{ loop.index is even ? '100' : '0' }}">

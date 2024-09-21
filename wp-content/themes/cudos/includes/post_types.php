@@ -24,6 +24,25 @@ function register_custom_post_types() {
               'rewrite'               => array( 'slug'  =>  'creations' ),
           ),
       ),
+      'team' => array(
+          'singular' => 'Team Member',
+          'plural' => 'Team Members',
+          'args' => array(
+              'public'                => false,
+              'has_archive'           => false,
+              'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', ),
+              'hierarchical'          => false,
+              'show_ui'               => true,
+              'show_in_menu'          => true,
+              'menu_position'         => 5,
+              'show_in_admin_bar'     => true,
+              'show_in_nav_menus'     => true,
+              'can_export'            => true,
+              'exclude_from_search'   => true,
+              'publicly_queryable'    => false,
+              'capability_type'       => 'page',
+          ),
+      ),
   );
 
   $taxonomies = array(

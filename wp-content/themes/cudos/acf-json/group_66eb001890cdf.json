@@ -87,6 +87,11 @@
                 "param": "page_type",
                 "operator": "!=",
                 "value": "front_page"
+            },
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "team"
             }
         ]
     ],
@@ -108,5 +113,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1726677156
+    "modified": 1726929014
 }

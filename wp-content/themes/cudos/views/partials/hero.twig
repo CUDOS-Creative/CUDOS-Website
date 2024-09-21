@@ -3,7 +3,9 @@
     {% if post.post_type == 'creation' %}
     <span class="hero__subtitle h4">Case Study</span>
     {% endif %}
-    <h1>{{ hero.page_title ? hero.page_title : post.title }}</h1>
+    <div class="typing-wrap">
+      <h1>{{ hero.page_title ? hero.page_title : post.title }}</h1>
+    </div>
   </div>
   
 </div>

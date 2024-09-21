@@ -7,7 +7,8 @@
           <img src="{{ get_image(block.icon).src }}" alt="{{ get_image(block.icon).alt }}">
         </div>
       {% endif %}
-      <div class="wysiwyg wysiwyg--narrow-p">
+      
+      <div class="wysiwyg {{ block.narrow ? 'wysiwyg--narrow' : 'wysiwyg--narrow-p' }}">
         {{ block.text }}
 
         {% include 'partials/button.twig' %}

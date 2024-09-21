@@ -3,19 +3,28 @@ ol,
 ul,
 table {
   font-size: rem(18);
-  line-height: 1.5;
+  line-height: 1.6;
   color: $grey;
   margin-bottom: 1rem;
 }
 
+ol {
+  list-style: decimal;
+}
+
 .bg-dark,
 .bg-image,
-.bg-custom {
+.bg-custom,
+.bg-gradient {
   p,
   ol,
   ul,
   table {
     color: white;
+
+    a {
+      color: $orange;
+    }
   }
 }
 

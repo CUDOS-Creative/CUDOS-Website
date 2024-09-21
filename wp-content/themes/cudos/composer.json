@@ -36,7 +36,7 @@
     }
   ],
   "require": {
-    "timber/timber": "^2.1"
+    "timber/timber": "^2.2"
   },
   "require-dev": {
     "yoast/wp-test-utils": "^1.0",

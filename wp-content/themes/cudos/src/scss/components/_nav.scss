@@ -55,6 +55,33 @@
         font-size: rem(30);
         display: inline-block;
         letter-spacing: 0.2em;
+        transition: color 0.2s ease;
+        position: relative;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: $white;
+          z-index: -1;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $orange;
+          &:before {
+            transform: scaleX(1);
+          }
+        }
 
         @media (max-width: 992px) {
           font-size: rem(24);

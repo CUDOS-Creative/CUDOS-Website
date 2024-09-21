@@ -1,4 +1,24 @@
-<div class="container px-4 mx-auto">
-  <div>
+<div class="container px-4 mx-auto text-center">
+  <div class="text-center pb-6">
+    <h2>{{ block.title }}</h2>
+  </div>
+</div>
+
+<div class="container px-4 mx-auto max-w-5xl">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {% for item in block.images %}
+      <div class="case-study-image">
+        <img src="{{ get_image(item).src|resize(500, 500, 'center') }}" alt="{{ get_image(item).alt }}">
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="text-center">
+    <blockquote>
+      {{ block.quote_text }}
+      <cite>{{ block.author }}</cite>
+    </blockquote>
+
+    {% include 'partials/button.twig' %}
   </div>
 </div>

@@ -21,7 +21,6 @@
                 "dark": "Dark",
                 "gradient": "Gradient",
                 "image": "Image",
-                "custom": "Custom",
                 "transparent": "Transparent"
             },
             "default_value": "transparent",
@@ -78,7 +77,7 @@
         },
         {
             "key": "field_66e96d6965b4e",
-            "label": "Background Colour",
+            "label": "Custom Background Colour",
             "name": "bg_colour",
             "aria-label": "",
             "type": "color_picker",
@@ -88,8 +87,15 @@
                 [
                     {
                         "field": "field_66e96bf9e7a19",
-                        "operator": "==contains",
-                        "value": "custom"
+                        "operator": "==",
+                        "value": "light"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_66e96bf9e7a19",
+                        "operator": "==",
+                        "value": "dark"
                     }
                 ]
             ],
@@ -211,5 +217,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1726758653
+    "modified": 1726926493
 }

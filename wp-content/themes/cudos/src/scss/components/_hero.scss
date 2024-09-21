@@ -1,5 +1,6 @@
 .hero {
   background-color: $brand-grey;
+  position: relative;
   padding-top: 20rem;
   padding-bottom: 4rem;
   background-position: top center;
@@ -8,8 +9,6 @@
   color: white;
 
   &--creation {
-    position: relative;
-
     &:after {
       content: "";
       position: absolute;
@@ -37,5 +36,34 @@
     color: white;
     font-size: rem(58);
     font-weight: 700;
+    word-break: break-word;
+
+    &:after {
+      content: "_";
+      animation: blinker 1s infinite linear;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: rem(32);
+    }
+  }
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
   }
 }
