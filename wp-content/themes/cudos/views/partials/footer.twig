@@ -22,9 +22,29 @@
 
         <div class="col-span-12 lg:col-span-2 flex lg:justify-end">
           <ul class="social">
-            <li><a href="#">{{ source('/static/svg/facebook.svg' ) }}</a></li>
-            <li><a href="#">{{ source('/static/svg/linkedin.svg' ) }}</a></li>
-            <li><a href="#">{{ source('/static/svg/instagram.svg' ) }}</a></li>
+            {% if social_links.facebook %}
+            <li>
+              <a href="{{ social_links.facebook }}" target="_blank" title="Follow us on Facebook. Opens in a new tab.">
+                {{ source('/static/svg/facebook.svg' ) }}
+              </a>
+            </li>
+            {% endif %}
+            
+            {% if social_links.linkedin %}
+            <li>
+              <a href="{{ social_links.linkedin }}" target="_blank" title="Follow us on LinkedIn. Opens in a new tab.">
+                {{ source('/static/svg/linkedin.svg' ) }}
+              </a>
+            </li>
+            {% endif %}
+
+            {% if social_links.instagram %}
+            <li>
+              <a href="{{ social_links.instagram }}" target="_blank" title="Follow us on Instagram. Opens in a new tab.">
+                {{ source('/static/svg/instagram.svg' ) }}
+              </a>
+            </li>
+            {% endif %}
           </ul>
         </div>
       </div><!-- /.grid -->

@@ -58,6 +58,7 @@ class StarterSite extends Site
 		$context['menu']  = Timber::get_menu('primary');
 		$context['site']  = $this;
     $context['layout'] = get_field('layout');
+    $context['social_links'] = get_field('social_links', 'options');
 
 		return $context;
 	}
