@@ -1,18 +1,12 @@
 {% extends 'layouts/base.twig' %}
 
 {% block hero %}
-  <div class="home-video">
+  <div class="home-video" data-vimeo-id="{{ hero_video.vimeo_id }}">
     <div class="video-background">
       <div class="video-background__facade">
-        <img src="{{ get_image(hero_video.facade ).src }}" alt="{{ get_image(hero_video.facade ).alt }}">
+        <img src="{{ get_image(hero_video.facade).src }}" alt="{{ get_image(hero_video.facade).alt }}">
       </div>
-      <iframe 
-          title="Home page video."
-          src="https://player.vimeo.com/video/{{ hero_video.vimeo_id }}?autoplay=1&muted=1&loop=1&background=1" 
-          frameborder="0" 
-          allow="autoplay; fullscreen" 
-          allowfullscreen>
-      </iframe>
+      <div class="video-iframe-placeholder"></div>
     </div>
   </div>
 {% endblock %}
