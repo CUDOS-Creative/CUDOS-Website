@@ -76,3 +76,11 @@ form {
   text-align: center;
   padding-top: 1rem;
 }
+
+.bg-dark {
+  form {
+    .wpcf7-not-valid-tip {
+      color: rgb(225, 51, 51);
+    }
+  }
+}

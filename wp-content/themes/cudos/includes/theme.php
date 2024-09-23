@@ -103,11 +103,20 @@ class StarterSite extends Site
     return Timber::get_posts($args);
   }
 
-  public function get_case_studies() 
+  public function get_case_studies($post_count) 
   {
     $args = array(
         'post_type' => 'creation',
-        'posts_per_page' => -1,
+        'posts_per_page' => $post_count ? $post_count : -1,
+    );
+
+    return Timber::get_posts($args);
+  }
+
+  public function get_news($post_count) {
+    $args = array(
+      'post_type' => 'post',
+      'posts_per_page' => $post_count ? $post_count : -1,
     );
 
     return Timber::get_posts($args);
@@ -115,6 +124,7 @@ class StarterSite extends Site
 
   public function add_to_twig($twig)
 	{
+    $twig->addFunction(new \Twig\TwigFunction('get_news', [$this, 'get_news']));
     $twig->addFunction(new \Twig\TwigFunction('get_team', [$this, 'get_team']));
     $twig->addFunction(new \Twig\TwigFunction('get_case_studies', [$this, 'get_case_studies']));
 		return $twig;

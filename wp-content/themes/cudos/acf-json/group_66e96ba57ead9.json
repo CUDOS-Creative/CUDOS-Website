@@ -539,7 +539,7 @@
                             "name": "case_studies",
                             "aria-label": "",
                             "type": "relationship",
-                            "instructions": "",
+                            "instructions": "Select Case Studies from the list below to display, or leave empty to show the three latest.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -558,7 +558,7 @@
                                 "search",
                                 "taxonomy"
                             ],
-                            "return_format": "",
+                            "return_format": "object",
                             "acfe_add_post": 0,
                             "acfe_edit_post": 0,
                             "acfe_bidirectional": {
@@ -787,9 +787,27 @@
                                     "acfe_textarea_code": 0,
                                     "maxlength": "",
                                     "allow_in_bindings": 0,
-                                    "rows": "",
+                                    "rows": 3,
                                     "placeholder": "",
-                                    "new_lines": "",
+                                    "new_lines": "br",
+                                    "parent_repeater": "field_66ec3b4b891ed"
+                                },
+                                {
+                                    "key": "field_66f169c381f70",
+                                    "label": "Button",
+                                    "name": "button",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "allow_in_bindings": 0,
                                     "parent_repeater": "field_66ec3b4b891ed"
                                 }
                             ]
@@ -1511,7 +1529,7 @@
                                 "id": ""
                             },
                             "acfe_repeater_stylised_button": 1,
-                            "layout": "table",
+                            "layout": "block",
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -1568,6 +1586,29 @@
                                     "placeholder": "",
                                     "prepend": "",
                                     "append": "",
+                                    "parent_repeater": "field_66e9ada655be4"
+                                },
+                                {
+                                    "key": "field_66f1716094a1a",
+                                    "label": "Description",
+                                    "name": "text_description",
+                                    "aria-label": "",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "acfe_textarea_code": 0,
+                                    "maxlength": "",
+                                    "allow_in_bindings": 0,
+                                    "rows": 2,
+                                    "placeholder": "",
+                                    "new_lines": "br",
                                     "parent_repeater": "field_66e9ada655be4"
                                 }
                             ]
@@ -1634,6 +1675,39 @@
                             "acfe_clone_modal_close": 0,
                             "acfe_clone_modal_button": "",
                             "acfe_clone_modal_size": "large"
+                        },
+                        {
+                            "key": "field_66f16f5436441",
+                            "label": "Icon Size",
+                            "name": "icon_size",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "default": "Default (Small)",
+                                "large": "Large"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "max": "",
+                            "allow_custom": 0,
+                            "search_placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "min": ""
                         }
                     ],
                     "min": "",
@@ -1733,6 +1807,27 @@
                             "acfe_wysiwyg_toolbar_buttons": []
                         },
                         {
+                            "key": "field_66f17a9a36b79",
+                            "label": "Form Shortcode",
+                            "name": "form_shortcode",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_66ec1632dcefc",
                             "label": "Settings",
                             "name": "",
@@ -1753,6 +1848,115 @@
                         },
                         {
                             "key": "field_66ec1632dcefd",
+                            "label": "",
+                            "name": "settings",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_66e96bf8c5a29"
+                            ],
+                            "display": "group",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_modal_edit_size": "",
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_layout_locations": [],
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_66f151cf25dbe": {
+                    "key": "layout_66f151cf25dbe",
+                    "name": "news",
+                    "label": "News",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66f151d025dc0",
+                            "label": "Content",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0,
+                            "no_preference": 0,
+                            "selected": 0
+                        },
+                        {
+                            "key": "field_66f151f825dc7",
+                            "label": "Shown Posts",
+                            "name": "shown_posts",
+                            "aria-label": "",
+                            "type": "number",
+                            "instructions": "Set the number of posts to show. Defaults to -1 (show all).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": -1,
+                            "min": -1,
+                            "max": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "step": 1,
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_66f151d025dc4",
+                            "label": "Settings",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0,
+                            "no_preference": 0,
+                            "selected": 0
+                        },
+                        {
+                            "key": "field_66f151d025dc5",
                             "label": "",
                             "name": "settings",
                             "aria-label": "",
@@ -1836,5 +2040,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1726929031
+    "modified": 1727101604
 }

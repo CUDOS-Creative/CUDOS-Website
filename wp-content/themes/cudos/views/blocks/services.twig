@@ -15,6 +15,14 @@
           {% endif %}
           <h3>{{ item.title }}</h3>
           <p>{{ item.text_description }}</p>
+
+          {% if item.button %}
+            <div class="mt-4">
+              {% include 'components/button.twig' with {
+                'button' : item.button,
+              } %}
+            </div>
+          {% endif %}
         </div>
       {% endfor %}
     </div>

@@ -4,5 +4,7 @@
     {{ block.text }}
   </div>
 
-  {{ fn('do_shortcode', '[contact-form-7 id="f45100a" title="Contact Form"]') }}
+  {% if block.form_shortcode %}
+  {{ fn('do_shortcode', block.form_shortcode) }}
+  {% endif %}
 </div>

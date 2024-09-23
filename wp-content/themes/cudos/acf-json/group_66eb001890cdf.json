@@ -74,6 +74,28 @@
             "acfe_group_modal_close": 0,
             "acfe_group_modal_button": "",
             "acfe_group_modal_size": "large"
+        },
+        {
+            "key": "field_66f153962047e",
+            "label": "Darken Hero Image",
+            "name": "darken_hero_image",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "style": "",
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         }
     ],
     "location": [
@@ -113,5 +135,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1726929014
+    "modified": 1727091631
 }

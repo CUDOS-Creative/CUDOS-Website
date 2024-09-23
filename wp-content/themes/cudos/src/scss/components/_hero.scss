@@ -1,5 +1,12 @@
 .hero {
-  background-color: $brand-grey;
+  background: rgb(192, 80, 94);
+  background: linear-gradient(
+    308deg,
+    rgba(192, 80, 94, 1) 0%,
+    rgba(244, 151, 11, 1) 44%,
+    rgba(244, 151, 11, 1) 55%,
+    rgba(192, 80, 94, 1) 100%
+  );
   position: relative;
   padding-top: 20rem;
   padding-bottom: 4rem;
@@ -34,9 +41,11 @@
 
   h1 {
     color: white;
-    font-size: rem(58);
+    font-size: rem(48);
     font-weight: 700;
     word-break: break-word;
+    max-width: 1200px;
+    width: 100%;
 
     &:after {
       content: "_";

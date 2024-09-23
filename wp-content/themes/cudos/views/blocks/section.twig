@@ -1,12 +1,5 @@
 <div class="layout">
-  {% for block in block.layout %}
-    <div class="layout__block
-    {{ block.settings.remove_top_padding ? '' : 'pt-24' }}
-    {{ block.settings.remove_bottom_padding ? '' : 'pb-24' }}
-    bg-{{ block.settings.background }}"
-      {% include 'partials/block-conditionals.twig' %}
-    >
-      {% include "blocks/" ~ block.acf_fc_layout ~ ".twig" %}
-    </div>
-  {% endfor %}
+  {% include 'partials/layout-loop.twig' with {
+    'layout' : block.layout,
+  } %}
 </div>

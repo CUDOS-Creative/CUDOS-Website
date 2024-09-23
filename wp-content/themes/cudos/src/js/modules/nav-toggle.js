@@ -32,3 +32,12 @@ const toggleMenu = () => {
 
 // Event listener for the toggle button
 toggle.addEventListener("click", toggleMenu);
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    const isMenuOpen = toggle.classList.contains("is-active");
+    if (isMenuOpen) {
+      toggleMenu(true); // Force close the menu
+    }
+  }
+});

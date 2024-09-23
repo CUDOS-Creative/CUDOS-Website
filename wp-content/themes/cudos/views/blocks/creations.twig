@@ -5,7 +5,7 @@
 
   <div class="container px-4 mx-auto max-w-5xl pb-24">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
-      {% for item in get_case_studies() %}
+      {% for item in get_case_studies(-1) %}
         <a class="card" href="{{ item.link }}">
           <img src="{{ get_image(item.thumbnail).src|resize(500, 500, 'center') }}" alt="{{ get_image(item.thumbnail).alt }}">
           <div class="card__overlay">

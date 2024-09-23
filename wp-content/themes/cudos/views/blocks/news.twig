@@ -1,0 +1,33 @@
+{% set news = get_news(block.shown_posts) %}
+
+<div class="container mx-auto px-4">
+ 
+  <div class="max-w-6xl mx-auto">
+    <div class="md:grid grid-cols-12 gap-8">
+      {% for item in news %}
+      <div class="md:col-span-6 mb-8 md:mb-0 flex">
+
+        <div class="bg-light flex flex-col">
+          <img src="{{ get_image(item.thumbnail).src|resize(800, 280, 'center') }}" alt="{{ get_image(item.thumbnail).alt }}">
+          <div class="p-6 md:p-8 flex-grow flex flex-col">  
+            <h3>{{ item.title }}</h3>
+            <p class="pe-14">{{ item.excerpt({ read_more: false }) }}</p>
+            
+            <div class="mt-auto pt-6 pb-4">
+              {% include 'components/button.twig' with {
+                label: 'Read more about ' ~ item.title,
+                button: {
+                  title: 'Read more',
+                  url: item.link,
+                }
+              } %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

@@ -19,3 +19,8 @@ Timber::init();
 new StarterSite();
 
 add_filter( 'show_admin_bar', '__return_false' );
+
+function change_admin_favicon() {
+  echo '<link rel="icon" type="image/png" href="' . get_template_directory_uri() . '/includes/admin-favicon.png">';
+}
+add_action('admin_head', 'change_admin_favicon');
