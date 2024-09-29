@@ -190,6 +190,36 @@
             "ui_off_text": "",
             "ui": 1,
             "style": ""
+        },
+        {
+            "key": "field_66f69579f854e",
+            "label": "Darken Image",
+            "name": "darken_image",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_66e96bf9e7a19",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1,
+            "style": ""
         }
     ],
     "location": [
@@ -222,5 +252,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1727089851
+    "modified": 1727438125
 }

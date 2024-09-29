@@ -5,3 +5,52 @@ blockquote {
     font-weight: 700;
   }
 }
+
+.testimonial {
+  padding: 3rem 0;
+
+  @include mq-down(md) {
+    padding: 1rem 0;
+  }
+
+  blockquote {
+    font-size: rem(36);
+    font-family: "Urbanist", sans-serif;
+    padding-left: 2rem;
+    border-left: 10px solid $orange;
+    font-weight: 500;
+    line-height: 1.6;
+
+    @include mq-down(md) {
+      font-size: rem(26);
+    }
+  }
+
+  figcaption {
+    text-align: right;
+    padding-top: 1rem;
+    font-size: rem(20);
+    font-weight: 300;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include mq-down(md) {
+      text-align: left;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    @include mq-up(md) {
+      &:before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 1px;
+        background-color: $white;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

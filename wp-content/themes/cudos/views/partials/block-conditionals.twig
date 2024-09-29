@@ -1,7 +1,7 @@
-{% if block.settings.background == 'image' and block.settings.parallax != true %}
-  style="background-image: url({{ get_image(block.settings.background_image).src }});"
+{% if block.settings_background == 'image' and block.settings_parallax != true %}
+  style="background-image: url({{ get_image(block.settings_background_image).src }});"
 {% endif %}
 
-{% if block.settings.bg_colour %}
-  style="background-color: {{ block.settings.bg_colour }};"
+{% if block.settings_bg_colour %}
+  style="background-color: {{ block.settings_bg_colour }};"
 {% endif %}

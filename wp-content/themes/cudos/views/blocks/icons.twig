@@ -11,7 +11,7 @@
       <div class="icon {{ block.icon_size == 'large' ? 'icon--lg mb-6' : '' }}">
         <img src="{{ get_image(item.icon).src }}" alt="{{ get_image(item.icon).alt }}">
       </div>
-      <span class="h3 mt-3 block">{{ item.title }}</h4>
+      <span class="h3 mt-3 block">{{ item.title }}</span>
       {% if item.text_description %}
         <p class="mb-0 mt-4 px-4">{{ item.text_description }}</p>
       {% endif %}

@@ -1,10 +1,10 @@
 {% for block in layout %}
-  <div class="layout__block {{ block.settings.remove_top_padding ? '' : 'pt-16 lg:pt-24' }} {{ block.settings.remove_bottom_padding ? '' : 'pb-16 lg:pb-24' }} bg-{{ block.settings.background }} {{ block.settings.parallax ? 'parallax' : '' }}"
+  <div class="layout__block {{ block.settings_remove_top_padding ? '' : 'pt-16 lg:pt-24' }} {{ block.settings_remove_bottom_padding ? '' : 'pb-16 lg:pb-24' }} bg-{{ block.settings_background }} {{ block.settings_parallax ? 'parallax' : '' }} {{ block.settings_darken_image ? 'bg-image--darken' : '' }}"
     {% include 'partials/block-conditionals.twig' %}>
     {% include "blocks/" ~ block.acf_fc_layout ~ ".twig" %}
 
-    {% if block.settings.parallax %}
-      <img class="parallax__image" src="{{ get_image(block.settings.background_image).src }}" alt="{{ get_image(block.settings.background_image).alt }}">
+    {% if block.settings_parallax %}
+      <img class="parallax__image" src="{{ get_image(block.settings_background_image).src }}" alt="{{ get_image(block.settings_background_image).alt }}">
     {% endif %}
   </div>
 {% endfor %}

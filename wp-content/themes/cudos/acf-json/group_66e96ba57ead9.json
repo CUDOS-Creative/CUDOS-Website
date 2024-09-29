@@ -190,10 +190,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -355,10 +355,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -462,10 +462,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -624,10 +624,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
-                            "layout": "",
+                            "display": "seamless",
+                            "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -848,10 +848,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -1066,10 +1066,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -1263,10 +1263,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -1339,6 +1339,135 @@
                             "allow_custom": 0,
                             "search_placeholder": "",
                             "min": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_modal_edit_size": "",
+                    "acfe_flexible_render_template": false,
+                    "acfe_flexible_render_style": false,
+                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_thumbnail": false,
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_layout_locations": [],
+                    "acfe_flexible_category": false,
+                    "acfe_layout_col": "auto",
+                    "acfe_layout_allowed_col": false
+                },
+                "layout_66f6940422ff7": {
+                    "key": "layout_66f6940422ff7",
+                    "name": "testimonial",
+                    "label": "Testimonial",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66f6940422ff9",
+                            "label": "Content",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0,
+                            "no_preference": 0,
+                            "selected": 0
+                        },
+                        {
+                            "key": "field_66f6940422ffb",
+                            "label": "Quote Text",
+                            "name": "quote_text",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "acfe_textarea_code": 0,
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_66f6943023000",
+                            "label": "Author",
+                            "name": "author",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_66f6940422ffd",
+                            "label": "Settings",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0,
+                            "no_preference": 0,
+                            "selected": 0
+                        },
+                        {
+                            "key": "field_66f6940422ffe",
+                            "label": "",
+                            "name": "settings",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_66e96bf8c5a29"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
                         }
                     ],
                     "min": "",
@@ -1443,10 +1572,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -1666,10 +1795,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -1863,10 +1992,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -1972,10 +2101,10 @@
                             "clone": [
                                 "group_66e96bf8c5a29"
                             ],
-                            "display": "group",
+                            "display": "seamless",
                             "layout": "block",
                             "prefix_label": 0,
-                            "prefix_name": 0,
+                            "prefix_name": 1,
                             "acfe_seamless_style": 0,
                             "acfe_clone_modal": 0,
                             "acfe_clone_modal_close": 0,
@@ -2040,5 +2169,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1727101604
+    "modified": 1727439003
 }
