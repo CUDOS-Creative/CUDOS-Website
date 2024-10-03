@@ -28,7 +28,7 @@ blockquote {
 
   figcaption {
     text-align: right;
-    padding-top: 1rem;
+    padding-top: 2rem;
     font-size: rem(20);
     font-weight: 300;
     font-style: italic;
@@ -50,6 +50,21 @@ blockquote {
         height: 1px;
         background-color: $white;
         margin-right: 1rem;
+      }
+    }
+  }
+
+  &--small {
+    blockquote {
+      font-size: rem(28);
+    }
+    @include mq-down(md) {
+      blockquote {
+        font-size: rem(18);
+      }
+
+      figcaption {
+        font-size: rem(18);
       }
     }
   }

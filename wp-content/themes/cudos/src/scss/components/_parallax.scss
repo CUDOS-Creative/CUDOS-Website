@@ -1,4 +1,4 @@
-.parallax {
+.parallax:not(.parallax--static) {
   position: relative;
 
   > * {

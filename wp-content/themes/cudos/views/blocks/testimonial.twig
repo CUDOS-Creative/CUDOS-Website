@@ -1,12 +1,13 @@
 <div class="container px-4 mx-auto">
   <div class="lg:grid lg:grid-cols-12 lg:gap-4">
     <div class="lg:col-span-6">
-      <figure class="testimonial" data-aos="fade-left">
+      <figure class="testimonial testimonial--{{ block.testimonial_size }}" data-aos="fade-left">
         <blockquote>
           {{ block.quote_text }}
         </blockquote>
         <figcaption><span>{{ block.author }}</span></figcaption>
       </figure>
     </div>
+    
   </div>
 </div>

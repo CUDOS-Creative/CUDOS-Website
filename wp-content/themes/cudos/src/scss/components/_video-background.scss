@@ -7,6 +7,7 @@
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  background-color: $dark;
 
   @media (max-width: 900px) {
     /* height = 100 * (9 / 16) = 56.25 */

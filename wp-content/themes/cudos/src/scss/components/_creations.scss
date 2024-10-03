@@ -1,0 +1,17 @@
+.creations {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    width: 33.33%;
+    display: block;
+
+    @include mq-down(lg) {
+      width: 50%;
+    }
+
+    @include mq-down(sm) {
+      width: 100%;
+    }
+  }
+}

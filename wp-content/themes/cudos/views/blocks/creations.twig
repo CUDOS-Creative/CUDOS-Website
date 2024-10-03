@@ -4,9 +4,17 @@
   </div>
 
   <div class="container px-4 mx-auto max-w-5xl pb-24">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+
+    <div class="filters">
+      <button class="active" data-filter="*">Show all</button>
+      {% for item in get_creation_terms() %}
+        <button data-filter="{{ item.slug }}">{{ item.name }}</button>
+      {% endfor %}
+    </div>
+
+    <div class="creations">
       {% for item in get_case_studies(-1) %}
-        <a class="card" href="{{ item.link }}">
+        <a class="card creations-item {% for term in item.terms %}filter-{{ term.slug }} {% endfor %}" href="{{ item.link }}">
           <img src="{{ get_image(item.thumbnail).src|resize(500, 500, 'center') }}" alt="{{ get_image(item.thumbnail).alt }}">
           <div class="card__overlay">
             {{ item.title }}

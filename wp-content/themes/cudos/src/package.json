@@ -25,6 +25,7 @@
     "aos": "^2.3.4",
     "body-scroll-lock": "^4.0.0-beta.0",
     "gulp-sass-glob": "^1.1.0",
+    "isotope-layout": "^3.0.6",
     "micromodal": "^0.4.10",
     "postcss": "^8.0.0",
     "postcss-discard-comments": "^7.0.3",

@@ -1,0 +1,39 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+
+  @include mq-down(lg) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    border-radius: 500px;
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+    font-size: rem(18);
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    font-style: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    align-self: flex-end;
+    padding: 0.3rem 1.5rem;
+    position: relative;
+    border: 1px solid $orange;
+    white-space: nowrap;
+
+    @include mq-down(lg) {
+      font-size: rem(14);
+      margin: 0.5rem;
+    }
+
+    + li {
+      @include mq-up(lg) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

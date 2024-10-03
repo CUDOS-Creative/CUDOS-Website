@@ -123,9 +123,19 @@ class StarterSite extends Site
     return Timber::get_posts($args);
   }
 
+  public function get_creation_terms() {
+    $args = array(
+      'taxonomy' => 'creations_category',
+      'hide_empty' => true,
+    );
+
+    return Timber::get_terms($args);
+  }
+
   public function add_to_twig($twig)
 	{
     $twig->addFunction(new \Twig\TwigFunction('get_news', [$this, 'get_news']));
+    $twig->addFunction(new \Twig\TwigFunction('get_creation_terms', [$this, 'get_creation_terms']));
     $twig->addFunction(new \Twig\TwigFunction('get_team', [$this, 'get_team']));
     $twig->addFunction(new \Twig\TwigFunction('get_case_studies', [$this, 'get_case_studies']));
 		return $twig;
