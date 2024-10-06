@@ -1,0 +1,19 @@
+<div class="container px-4 mx-auto text-center">
+  {% if block.title %}
+  <div class="text-center">
+    <h2>{{ block.title }}</h2>
+  </div>
+  {% endif %}
+
+  <div class="md:grid grid-cols-12 gap-8">
+    {% for item in block.details %}
+    <div class="text-center col-span-4 contact-details" data-aos="fade-left" data-aos-delay="{{ loop.index - 1 }}00">
+      <p>{{ item.title }}</p>
+      <a class="link" href="{{ item.link.url }}" target="{{ item.link.target ? item.link.target : "_self" }}">
+        {{ item.link.title }}
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>

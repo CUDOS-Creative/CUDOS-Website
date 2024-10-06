@@ -7,13 +7,13 @@
 <div class="container px-4 mx-auto max-w-5xl">
   <div class="sm:grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8">
     {% for item in block.images %}
-      <div class="case-study-image mb-4 sm:mb-0">
+      <div class="case-study-image mb-4 sm:mb-0" data-aos="fade-left" data-aos-delay="{{ loop.index }}00">
         <img src="{{ get_image(item).src|resize(500, 500, 'center') }}" alt="{{ get_image(item).alt }}">
       </div>
     {% endfor %}
   </div>
 
-  <div class="text-center">
+  <div class="text-center" data-aos="fade-up">
     <blockquote class="mt-10 max-w-3xl mx-auto">
       {{ block.quote_text }}
       <cite class="block mt-6 pb-4">{{ block.author }}</cite>
