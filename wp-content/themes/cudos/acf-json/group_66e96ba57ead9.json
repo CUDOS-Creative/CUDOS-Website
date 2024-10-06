@@ -239,7 +239,7 @@
                 },
                 "layout_6702f4cfebe4b": {
                     "key": "layout_6702f4cfebe4b",
-                    "name": "Contact",
+                    "name": "contact",
                     "label": "Contact",
                     "display": "block",
                     "sub_fields": [
@@ -2628,5 +2628,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1728247437
+    "modified": 1728250088
 }
