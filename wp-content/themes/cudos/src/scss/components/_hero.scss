@@ -15,6 +15,11 @@
   background-repeat: no-repeat;
   color: white;
 
+  @include mq-down(md) {
+    padding-top: 14rem;
+    padding-bottom: 2rem;
+  }
+
   &--creation {
     &:after {
       content: "";
@@ -53,7 +58,8 @@
     }
 
     @media screen and (max-width: 768px) {
-      font-size: rem(32);
+      font-size: rem(28);
+      margin-bottom: 1rem;
     }
   }
 }

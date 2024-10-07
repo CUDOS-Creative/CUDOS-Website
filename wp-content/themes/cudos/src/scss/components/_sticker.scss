@@ -1,0 +1,19 @@
+.sticker {
+  border-radius: 500px;
+  font-family: "Reem Kufi", sans-serif;
+  font-optical-sizing: auto;
+  font-size: rem(14);
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  font-style: normal;
+  text-transform: uppercase;
+  display: inline-block;
+  align-self: flex-end;
+  padding: 0.3rem 1.25rem;
+  position: relative;
+  border: 1px solid $orange;
+  white-space: nowrap;
+  margin: 0.5rem;
+  margin-left: 0;
+  transition: background 0.3s ease;
+}

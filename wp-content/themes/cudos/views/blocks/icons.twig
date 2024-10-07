@@ -8,12 +8,19 @@
   <div class="{{ block.icons|length is odd ? 'md:flex' : 'flex' }} flex-wrap justify-center">
     {% for item in block.icons %}
     <div class="text-center lg:flex-1 md:w-1/3 {{ block.icons|length is odd ? 'mb-6 md:mb-0' : 'w-1/2 mb-4' }} p-2 md:p-4 md:max-w-96" data-aos="fade-up" data-aos-delay="{{ loop.index - 1 }}00">
+      {% if item.link %}
+      <a class="icon-link" href="{{ item.link.url }}">
+      {% endif %}
       <div class="icon {{ block.icon_size == 'large' ? 'icon--lg mb-6' : '' }}">
         <img src="{{ get_image(item.icon).src }}" alt="{{ get_image(item.icon).alt }}">
       </div>
       <span class="h3 mt-3 block">{{ item.title }}</span>
       {% if item.text_description %}
         <p class="mb-0 mt-4 px-4">{{ item.text_description }}</p>
+      {% endif %}
+
+      {% if item.link %}
+      </a>
       {% endif %}
     </div>
     {% endfor %}

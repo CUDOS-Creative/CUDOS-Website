@@ -1,0 +1,61 @@
+.teaser {
+  display: block;
+  transition: all 0.3s ease;
+
+  .teaser__image {
+    overflow: hidden;
+
+    img {
+      transition: transform 0.3s ease;
+    }
+  }
+  .teaser__meta {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .teaser__meta-item {
+      display: inline-flex;
+      align-items: center;
+
+      i {
+        display: block;
+        margin-right: 0.5rem;
+      }
+
+      span {
+        color: $orange;
+        font-family: "Reem Kufi", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: rem(14);
+      }
+
+      + div {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  h3 {
+    color: $white;
+    transition: color 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-10px);
+
+    h3 {
+      color: $orange;
+    }
+
+    .teaser__image {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

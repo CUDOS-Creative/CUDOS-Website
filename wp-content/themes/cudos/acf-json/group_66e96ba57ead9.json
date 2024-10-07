@@ -2198,6 +2198,24 @@
                                     "placeholder": "",
                                     "new_lines": "br",
                                     "parent_repeater": "field_66e9ada655be4"
+                                },
+                                {
+                                    "key": "field_67044ad697cde",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "allow_in_bindings": 0,
+                                    "parent_repeater": "field_66e9ada655be4"
                                 }
                             ]
                         },
@@ -2628,5 +2646,5 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1728250088
+    "modified": 1728334560
 }

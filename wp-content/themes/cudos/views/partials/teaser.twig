@@ -1,0 +1,25 @@
+ <a class="teaser" href="{{ item.link }}">
+          <div class="teaser__image">
+            <img src="{{ get_image(item.thumbnail).src|resize(561, 387, 'center') }}" alt="{{ get_image(item.thumbnail).alt }}">
+          </div>
+          <div class="teaser__inner">  
+            <div class="teaser__meta">
+              <div class="teaser__meta-item">
+                <i>{{ source('/static/svg/calendar.svg') }}</i>
+                <span>{{ item.date('jS M Y') }}</span>
+              </div>
+
+              <div class="teaser__meta-item">
+                <i>{{ source('/static/svg/author.svg') }}</i>
+                <span>{{ item.author.display_name }}</span>
+              </div>
+            </div>
+            <h3 class="mb-3">{{ item.title }}</h3>
+
+            <div class="teaser_terms">
+              {% for term in item.terms %}
+                <span class="sticker">{{ term.name }}</span>
+              {% endfor %}
+            </div>
+          </div>
+        </a>
