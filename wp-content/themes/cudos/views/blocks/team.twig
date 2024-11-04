@@ -41,6 +41,7 @@
           <div class="wysiwyg">
             {{ item.content }}
 
+            {% if item.linkedin %}
             <div class="mt-4">
               <p>
                 <a class="link" href="{{ item.linkedin }}" target="_blank">
@@ -48,6 +49,7 @@
                 </a>
               </p>
             </div>
+            {% endif %}
           </div>
         </div>
       </div>
